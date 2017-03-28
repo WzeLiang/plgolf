@@ -6,11 +6,120 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="edge">
     <link rel="stylesheet" href="../component/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../www/src/date/jedate.css">
     <link rel="stylesheet" href="../www/css/index.css">
-    <title>Title</title>
+    <title>订单管理</title>
 
 </head>
-<body>
+<body class="ordermanage">
+    <div class="htm-entry">
+        <form action="" class=" form-inline">
+            <div class="entry-line1 row">
+                <div class="form-group  col-xs-4">
+                    <label for="tradename" class="control-label">订单编号</label>
+                    <input type="text" name="ordercode" value="${ordercode}"  class="form-control" />
+                </div>
+                <div class="form-group  col-xs-4">
+                    <label class="control-label">用户名称</label>
+                    <input type="text"  name="nickname" value="${nickname}"  class="form-control" />
+                </div>
+                <div class="form-group col-xs-4">
+                    <label class="control-label">订单状态</label>
+                    <select name="status"  class="form-control">
+                        <option value="all" ${status=="all"?'selected':''}>全部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                        <option value="">待发货</option>
+                    </select>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="pull-left ">
+                    &nbsp; <label class="control-label">时间范围</label> &nbsp;
+
+                    <input class="form-control datainp wicon" id="createtime1"
+                           type="text" name='createtime1' placeholder="开始日期"
+                           value="${createtime1}"> - <input
+                        class="form-control datainp wicon" id="createtime2" type="text"
+                        name='createtime2' placeholder="结束日期" value="${createtime2}">
+
+                </div>
+                <div class="pull-right">
+                    <input type="submit" class="btn btn-primary" value="查询" />&nbsp;&nbsp;
+                    <input type="button" class=" btn btn-danger"
+                           onclick="$('#GOODSname').val('');$('#SKUcode').val('');"
+                           value="重置" />
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div class="htm-table">
+        <table class="table text-center table-bordered table-striped">
+            <tr>
+                <td>订单ID</td>
+                <td>订单编号</td>
+                <td>用户名称</td>
+                <td>下单时间</td>
+                <td>订单状态</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>2268</td>
+                <td>14906835561008489</td>
+                <td>
+                    <p>张三</p>
+                    <span>(ID：92)</span>
+                </td>
+                <td>2017-03-28 14:45:56</td>
+                <td>运营同意待发货</td>
+                <td>
+                    <a class="btn btn-primary" href="">查看</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="../component/jquery/dist/jquery.min.js"></script>
+    <script src="../www/js/fontchange.js"></script>
+    <script src="../www/src/date/jquery.jedate.min.js"></script>
+    <script src="../component/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var start = {
+                format : 'YYYY-MM-DD',
+                minDate : '2014-06-16 00:00:00', //设定最小日期为当前日期
+                festival : true,
+                //isinitVal:true,
+                maxDate : $.nowDate(0), //最大日期
+                choosefun : function(elem, datas) {
+                    end.minDate = datas; //开始日选好后，重置结束日的最小日期
+                }
+            };
+            var end = {
+                format : 'YYYY-MM-DD',
+                minDate : '2014-06-16 23:59:59', //设定最小日期为当前日期
+                festival : true,
+                //isinitVal:true,
+                maxDate : $.nowDate(0), //最大日期
+                choosefun : function(elem, datas) {
+                    start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+                }
+            };
+            $("#createtime1").jeDate(start);
+            $("#createtime2").jeDate(end);
+
+            function testShow(elem) {
+                $.jeDate(elem, {
+                    insTrigger : false,
+                    isinitVal : true,
+                    festival : true,
+                    ishmsVal : false,
+                    minDate : '2016-06-16 23:59:59',
+                    maxDate : $.nowDate(0),
+                    format : "hh:mm",
+                    zIndex : 3000,
+                });
+            }
+        </script>
 </body>
 </html>

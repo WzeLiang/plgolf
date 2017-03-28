@@ -41,7 +41,8 @@
 .evaluationcontrol,
 .itemmanage,
 .labelmanage,
-.comment {
+.comment,
+.ordermanage {
   margin: 4% 2% 2% 2%;
 }
 .modal {
