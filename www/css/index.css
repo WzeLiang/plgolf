@@ -51,7 +51,11 @@
 .listmanage,
 .addrecommend,
 .updaterecommend,
-.lookecommend {
+.lookecommend,
+.speciaoffer,
+.addctivity,
+.activityGoodsList,
+.selectActivityGoods {
   margin: 4% 2% 2% 2%;
 }
 .modal {
