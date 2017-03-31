@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <link rel="stylesheet" href="../component/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../www/src/date/jedate.css">
+    <link rel="stylesheet" href="../www/css/index.css">
+    <title>Title</title>
+
+</head>
+<body class="tradeManage">
+    <div class="htm-entry">
+        <form action="" class="form-inline">
+            <div class="entry-line1 row">
+                <div class="form-group col-xs-4">
+                    <label >交易号</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-xs-4">
+                    <label >交易号</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </form>
+    </div>
+
+<script src="../component/jquery/dist/jquery.min.js"></script>
+<script src="../www/js/fontchange.js"></script>
+<script src="../www/src/date/jquery.jedate.min.js"></script>
+    <script type="text/javascript">
+        var start = {
+            format : 'YYYY-MM-DD',
+            minDate : '2014-06-16 00:00:00', //设定最小日期为当前日期
+            festival : true,
+            //isinitVal:true,
+            maxDate : $.nowDate(0), //最大日期
+            choosefun : function(elem, datas) {
+                end.minDate = datas; //开始日选好后，重置结束日的最小日期
+            }
+        };
+        var end = {
+            format : 'YYYY-MM-DD',
+            minDate : '2014-06-16 23:59:59', //设定最小日期为当前日期
+            festival : true,
+            //isinitVal:true,
+            maxDate : $.nowDate(0), //最大日期
+            choosefun : function(elem, datas) {
+                start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+            }
+        };
+        $("#createtime1").jeDate(start);
+        $("#createtime2").jeDate(end);
+
+        function testShow(elem) {
+            $.jeDate(elem, {
+                insTrigger : false,
+                isinitVal : true,
+                festival : true,
+                ishmsVal : false,
+                minDate : '2016-06-16 23:59:59',
+                maxDate : $.nowDate(0),
+                format : "hh:mm",
+                zIndex : 3000,
+            });
+        }
+    </script>
+</body>
+</html>

@@ -55,7 +55,9 @@
 .speciaoffer,
 .addctivity,
 .activityGoodsList,
-.selectActivityGoods {
+.selectActivityGoods,
+.lookActivityGoods,
+.tradeManage {
   margin: 4% 2% 2% 2%;
 }
 .modal {
