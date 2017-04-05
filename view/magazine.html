@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <link rel="stylesheet" href="../component/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../www/css/index.css">
+    <title>Title</title>
+
+</head>
+<body class="magazine">
+    <div class="htm-entry">
+        <form action="" class="form-inline">
+            <div class="row">
+                <div class="form-group col-xs-4">
+                    <label for="">杂志标题</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-xs-4">
+                    <label for="">杂志状态</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">全部</option>
+                        <option value="">已上架</option>
+                    </select>
+                </div>
+                <div class="pull-right">
+                    <button class="btn btn-primary">查询</button>&nbsp;
+                    <button class="btn btn-danger">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="htm-operation row">
+        <div class="pull-left">
+            <button class="btn btn-default">发布</button>
+            <button class="btn btn-default">下架</button>
+            <button class="btn btn-default">全选</button>
+        </div>
+        <div class="pull-right">
+            <a href="addMagazine.html" class="btn btn-primary">
+                添加杂志
+            </a>
+        </div>
+    </div>
+
+    <div class="htm-table">
+        <table class="table text-center table-bordered table-striped">
+            <tr>
+                <td>选择</td>
+                <td>杂志图片</td>
+                <td>杂志标题及作者</td>
+                <td>更新时间</td>
+                <td>状态</td>
+                <td>备注</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td style="width: 15%">
+                    <img src="../www/image/111.jpg" alt="" width="30%">
+                </td>
+                <td>
+                    <p>测试188</p>
+                    <p>作者:蓝天188</p>
+                </td>
+                <td>2017-03-17 14:14:02.0</td>
+                <td>已发布</td>
+                <td>测试</td>
+                <td>
+                    <a href="" class="btn btn-default">编辑</a>
+                    <a href="" class="btn btn-primary">查看</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+<script src="../component/jquery/dist/jquery.min.js"></script>
+<script src="../www/js/fontchange.js"></script>
+</body>
+</html>

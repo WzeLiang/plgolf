@@ -20,12 +20,78 @@
                     <input type="text" class="form-control">
                 </div>
                 <div class="form-group col-xs-4">
-                    <label >交易号</label>
-                    <input type="text" class="form-control">
-                </div>;
+                    <label >时间范围</label>
+                    <input class="form-control datainp wicon" id="createtime1" type="text" name='createtime1' placeholder="开始日期" value="${createtime1}">   —
+                    <input class="form-control datainp wicon" id="createtime2" type="text" name='createtime2' placeholder="结束日期" value="${createtime2}">
+                </div>
             </div>
-
+            <div class="row">
+                <div class="form-group col-xs-4">
+                    <label >交易号</label>
+                    <select name="" id="" class="form-control">
+                        <option value="">全部</option>
+                        <option value="">提现</option>
+                    </select>
+                </div>
+                <div class="pull-right">
+                    <button class="btn btn-primary">查询</button>
+                    <button class="btn btn-danger">重置</button>
+                </div>
+            </div>
         </form>
+    </div>
+
+    <div class="htm-operation row">
+        <div class="pull-right">
+            <button class="btn btn-success">导出报表</button>
+        </div>
+    </div>
+
+    <div class="htm-table">
+        <table class="table text-center table-bordered table-striped">
+            <tr>
+                <td>交易号</td>
+                <td>金额</td>
+                <td>支付方式</td>
+                <td>交易类型</td>
+                <td>交易状态</td>
+                <td>交易时间</td>
+                <td>操作</td>
+            </tr>
+            <tr>
+                <td>14908655980714313</td>
+                <td>-550.0</td>
+                <td>支付宝</td>
+                <td>退款</td>
+                <td>成功</td>
+                <td>2017-03-30 17:19:58</td>
+                <td>
+                    <a href="lookTrade.html" class="btn btn-primary">查看</a>
+                </td>
+            </tr>
+            <tr>
+                <td>14908655980714313</td>
+                <td>-550.0</td>
+                <td>支付宝</td>
+                <td>退款</td>
+                <td>成功</td>
+                <td>2017-03-30 17:19:58</td>
+                <td>
+                    <a href="" class="btn btn-primary">查看</a>
+                </td>
+            </tr>
+            <tr>
+                <td>14908655980714313</td>
+                <td>-550.0</td>
+                <td>支付宝</td>
+                <td>退款</td>
+                <td>成功</td>
+                <td>2017-03-30 17:19:58</td>
+                <td>
+                    <a href="" class="btn btn-primary">查看</a>
+                </td>
+            </tr>
+        </table>
     </div>
 
 <script src="../component/jquery/dist/jquery.min.js"></script>

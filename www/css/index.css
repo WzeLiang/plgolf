@@ -57,7 +57,12 @@
 .activityGoodsList,
 .selectActivityGoods,
 .lookActivityGoods,
-.tradeManage {
+.tradeManage,
+.lookTrade,
+.tradeReview,
+.lookTradeReview,
+.magazine,
+.addMagazine {
   margin: 4% 2% 2% 2%;
 }
 .modal {
