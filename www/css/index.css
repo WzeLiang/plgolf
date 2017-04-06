@@ -62,7 +62,19 @@
 .tradeReview,
 .lookTradeReview,
 .magazine,
-.addMagazine {
+.addMagazine,
+.updateMagazine,
+.lookMagazine,
+.golfCourse,
+.addGolfCourse,
+.updateGolfCourse,
+.lookGolfCourse,
+.commentManage,
+.usermanage,
+.tradingRecord,
+.userInfo,
+.orderRecord,
+.orderDetails {
   margin: 4% 2% 2% 2%;
 }
 .modal {

@@ -10,16 +10,16 @@
     <title>Title</title>
 
 </head>
-<body class="magazine">
+<body class="commentManage">
     <div class="htm-entry">
         <form action="" class="form-inline">
             <div class="row">
                 <div class="form-group col-xs-4">
-                    <label for="">杂志标题</label>
+                    <label for="">评论标题</label>
                     <input type="text" class="form-control">
                 </div>
                 <div class="form-group col-xs-4">
-                    <label for="">杂志状态</label>
+                    <label for="">评论类型</label>
                     <select name="" id="" class="form-control">
                         <option value="">全部</option>
                         <option value="">已上架</option>
@@ -33,51 +33,32 @@
         </form>
     </div>
 
-    <div class="htm-operation row">
-        <div class="pull-left">
-            <button class="btn btn-default">发布</button>
-            <button class="btn btn-default">下架</button>
-            <button class="btn btn-default">全选</button>
-        </div>
-        <div class="pull-right">
-            <a href="addMagazine.html" class="btn btn-primary">
-                添加杂志
-            </a>
-        </div>
-    </div>
-
     <div class="htm-table">
         <table class="table text-center table-bordered table-striped">
             <tr>
-                <td>选择</td>
-                <td>杂志图片</td>
-                <td>杂志标题及作者</td>
-                <td>更新时间</td>
-                <td>状态</td>
-                <td>备注</td>
+                <td>评论内容</td>
+                <td>评论人</td>
+                <td>评论标题</td>
+                <td>内容类型</td>
                 <td>操作</td>
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox">
-                </td>
-                <td style="width: 15%">
-                    <img src="../www/image/111.jpg" alt="" width="30%">
+                    <p>写的好</p>
+                    <span>2017-04-06 11:06:14.0</span>
                 </td>
                 <td>
-                    <p>测试188</p>
-                    <p>作者:蓝天188</p>
+                    隔壁经纪人
                 </td>
-                <td>2017-03-17 14:14:02.0</td>
-                <td>已发布</td>
-                <td>测试</td>
+                <td>123</td>
+                <td>球场资讯</td>
                 <td>
-                    <a href="updateMagazine.html" class="btn btn-default">编辑</a>
-                    <a href="lookMagazine.html" class="btn btn-primary">查看</a>
+                    <button class="btn btn-danger">删除</button>
                 </td>
             </tr>
         </table>
     </div>
+
 <script src="../component/jquery/dist/jquery.min.js"></script>
 <script src="../www/js/fontchange.js"></script>
 </body>
