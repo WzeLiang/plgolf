@@ -49,7 +49,7 @@
 .goodsmanage,.updategoods,.lookgoods,.evaluationcontrol,.itemmanage,.labelmanage,
 .comment,.ordermanage,.aftermanage,.afterdetails,.recommendanage,.listmanage,.addrecommend,
 .updaterecommend,.lookecommend,.speciaoffer,.addctivity,.activityGoodsList,.selectActivityGoods,
-.lookActivityGoods,.tradeManage,.lookTrade,.tradeReview,.lookTradeReview,.magazine,.addMagazine,
+.lookActivityGoods,.tradeManage,.lookTrade,.tradeReview,.lookTradeReview,.magazine,.addMagazine,.optionrecommend,
 .updateMagazine,.lookMagazine,.golfCourse,.addGolfCourse,.updateGolfCourse,.lookGolfCourse,.commentManage,
 .usermanage,.tradingRecord,.userInfo,.orderRecord,.orderDetails{
   margin: 4% 2% 2% 2%;
@@ -84,4 +84,66 @@ html{
 .evaluationcontrol{
 
 
+}
+
+//---optionRecommend-----
+.optionrecommend{
+  .htm-tab{
+    section {
+      display: none;
+      padding: 20px 0 0;
+      border-top: 1px solid #ddd;
+      //min-height: 300px;
+    }
+
+    #tab1,#tab2,#tab3,#tab4,#tab5{
+      display: none;
+    }
+
+    .checkbtn {
+      display: inline-block;
+      margin: 0 0 -1px;
+      padding: 15px 25px;
+      font-weight: 600;
+      text-align: center;
+      color: #bbb;
+      border: 1px solid transparent;
+    }
+
+
+
+    .checkbtn:hover {
+      color: #555;
+      cursor: pointer;
+    }
+
+    input:checked + .checkbtn {
+      color: black;
+      border: 1px solid #ddd;
+      border-top: 2px solid #3C8DBC;
+      border-bottom: 1px solid #fff;
+    }
+
+    #tab1:checked ~ #content1,
+    #tab2:checked ~ #content2,
+    #tab3:checked ~ #content3,
+    #tab4:checked ~ #content4,
+    #tab5:checked ~ #content5{
+      display: block;
+    }
+
+  }
+}
+
+
+.badge-corner {
+  position: relative;
+}
+
+.badge-corner .badge {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  font-weight: normal;
+  cursor: pointer;
 }

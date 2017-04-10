@@ -63,6 +63,7 @@
 .lookTradeReview,
 .magazine,
 .addMagazine,
+.optionrecommend,
 .updateMagazine,
 .lookMagazine,
 .golfCourse,
@@ -90,4 +91,52 @@
 }
 .modal-btn {
   margin-top: 5%;
+}
+.optionrecommend .htm-tab section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+.optionrecommend .htm-tab #tab1,
+.optionrecommend .htm-tab #tab2,
+.optionrecommend .htm-tab #tab3,
+.optionrecommend .htm-tab #tab4,
+.optionrecommend .htm-tab #tab5 {
+  display: none;
+}
+.optionrecommend .htm-tab .checkbtn {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+.optionrecommend .htm-tab .checkbtn:hover {
+  color: #555;
+  cursor: pointer;
+}
+.optionrecommend .htm-tab input:checked + .checkbtn {
+  color: black;
+  border: 1px solid #ddd;
+  border-top: 2px solid #3C8DBC;
+  border-bottom: 1px solid #fff;
+}
+.optionrecommend .htm-tab #tab1:checked ~ #content1,
+.optionrecommend .htm-tab #tab2:checked ~ #content2,
+.optionrecommend .htm-tab #tab3:checked ~ #content3,
+.optionrecommend .htm-tab #tab4:checked ~ #content4,
+.optionrecommend .htm-tab #tab5:checked ~ #content5 {
+  display: block;
+}
+.badge-corner {
+  position: relative;
+}
+.badge-corner .badge {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  font-weight: normal;
+  cursor: pointer;
 }

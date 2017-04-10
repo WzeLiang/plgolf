@@ -35,7 +35,17 @@
                 <label>列表页图片</label>
                 <p>(图片尺寸294px*304px)</p>
             </div>
-            <div class="col-xs-5 text-left"></div>
+            <div class="col-xs-5 text-left" id="pictureInfoImgDiv1">
+                <input id="imgInput" type="button" value="点击上传" class="btn btn-default"> <br>
+                <div class="button badge-corner" style="padding:0px">
+                    <input type="hidden" name="goodsImgWidth" value="${goodsImg.width}">
+                    <input type="hidden" name="goodsImgHeight" value="${goodsImg.height}">
+                    <input type="hidden" name="goodsImg" value="${goodsImg.img}">
+                    <img alt="大图" src="http://101.37.69.236:8888/1491469186340.png" id="imgss0" >
+                    <span class="badge bg-red-light" index="0"><span class="close"></span></span>
+
+                </div>
+            </div>
         </div>
         <div class="form-group row">
 
@@ -159,5 +169,9 @@
 
     <script src="../component/jquery/dist/jquery.min.js"></script>
     <script src="../www/js/fontchange.js"></script>
+    <script src="../www/src/swfupload/swfupload.js"></script>
+    <script src="../www/src/swfupload/fileupload.js"></script>
+    <script src="../www/src/swfupload/default.js"></script>
+
 </body>
 </html>
