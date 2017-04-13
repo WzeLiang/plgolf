@@ -75,7 +75,9 @@
 .tradingRecord,
 .userInfo,
 .orderRecord,
-.orderDetails {
+.orderDetails,
+.updateActivity,
+.advert {
   margin: 4% 2% 2% 2%;
 }
 .modal {
@@ -139,4 +141,7 @@
   top: -9px;
   font-weight: normal;
   cursor: pointer;
+}
+.alert {
+  margin: 5% 10% !important;
 }
