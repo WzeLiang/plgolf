@@ -23,6 +23,7 @@
 .htm-msg {
   border: solid 1px #dddddd;
   margin-bottom: 2%;
+  padding-bottom: 15px;
 }
 .msg-title {
   padding: 1%;
@@ -77,7 +78,9 @@
 .orderRecord,
 .orderDetails,
 .updateActivity,
-.advert {
+.advert,
+.goodscheap,
+.chosegoodcheap {
   margin: 4% 2% 2% 2%;
 }
 .modal {

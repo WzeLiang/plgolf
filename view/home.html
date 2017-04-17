@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="zh-cn">
 
 <head>
@@ -22,7 +22,6 @@
             cursor: auto !important;
             background: transparent !important;
         }
-
         .storage-btn:hover {
             color: white !important;
         }
@@ -151,6 +150,8 @@
                         <ul class="treeview-menu">
                             <li><a target="right" href="recommendManage.html">推荐管理</a></li>
                             <li><a target="right" href="speciaOffer.html">优惠活动</a>
+                            <li><a target="right" href="goodscheap.html">商品优惠</a>
+                            <li><a target="right" href="#">优惠券</a>
                             </li>
                         </ul>
                     </li>
@@ -193,7 +194,19 @@
 
                         </ul>
                     </li>
+                    <li class="treeview">
+                        <a href="#"> <i class="fa fa-file"></i>
+                            <span>消息</span> <span class="pull-right-container"> <i
+                                    class="fa fa-angle-left pull-right"></i>
+                                </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a target="right" href="">系统推送</a></li>
+                            <li><a target="right" href="">站内消息</a></li>
+                            <li><a target="right" href="">手机短信</a></li>
 
+                        </ul>
+                    </li>
                     <li class="treeview">
                         <a href="#"> <i class="fa fa-file"></i>
                             <span>广告</span> <span class="pull-right-container"> <i
@@ -254,12 +267,10 @@
 
             if (ifm != null) {
                 ifm.height(a);
-                console.log(a)
-                console.log(ifm)
 
             }
-        }
         $(window).resize(iFrameHeight);
+        }
         $(document).ready(iFrameHeight);
     </script>
 
