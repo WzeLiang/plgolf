@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="edge">
+    <link rel="stylesheet" href="../component/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../www/css/index.css">
+    <title>Title</title>
+
+</head>
+<body class="chosegoodcheapNext">
+    <div class="htm-bread">
+        <ol class="breadcrumb">
+            <li>营销</li>
+            <li>商品优惠</li>
+            <li>选择优惠商品</li>
+            <li class="active">填写优惠信息</li>
+        </ol>
+    </div>
+
+    <form action="">
+        <div class="htm-msg">
+            <div class="msg-title row">
+                <div class="pull-left">优惠信息</div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">参与优惠的商品</label>
+                </div>
+                <div class="col-xs-8 text-center">
+                    <table class="text-ceneter table table-bordered table-striped">
+                        <tr>
+                            <td>SKU</td>
+                            <td>ID</td>
+                            <td>可用库存</td>
+                            <td>优惠数量</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>钛合金加长加粗球杆</p>
+                                <span>(红色+10M)</span>
+                            </td>
+                            <td>789456122323</td>
+                            <td>1000</td>
+                            <td>
+                                <input type="text" class="form-control">
+                            </td>
+                            <td>
+                                <button class="btn btn-danger">移除</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">优惠标题</label>
+                </div>
+                <div class="col-xs-4 text-left">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-froup row">
+                <div class="col-xs-3 text-center">
+                    <label for="">会员类型</label>
+                </div>
+                <div class="col-xs-4 text-left">
+                    <input type="radio">全部
+                    <input type="radio">联盟会员
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">优惠时间</label>
+                </div>
+                <div class="col-xs-6 text-left">
+
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">限制条件</label>
+                </div>
+                <div class="col-xs-4 text-left">
+                    <input type="radio">数量
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">优惠形式</label>
+                </div>
+                <div class="col-xs-4 text-left">
+                    <input type="radio">直减
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">优惠内容</label>
+                </div>
+                <div class="col-xs-5 text-left">
+                    <table class="table text-center table-bordered table-striped">
+                        <tr>
+                            <td>优惠内容</td>
+                            <td>
+                                <button class="btn btn-default">添加</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                第<input type="number" min="1" class="form-control">件，减<input type="number" min="1" class="form-control">元
+                            </td>
+                            <td><button class="btn btn-danger">删除</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="finish-btn row">
+            <div class="col-xs-4 col-sm-5 col-md-5 col-lg-5"></div>
+            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
+                <button class="btn btn-primary btn-block">完成</button>
+            </div>
+        </div>
+    </form>
+
+<script src="../component/jquery/dist/jquery.min.js"></script>
+<script src="../www/js/fontchange.js"></script>
+</body>
+</html>

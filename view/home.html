@@ -66,34 +66,53 @@
         </a>
 
         <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation"
-             style="padding-right: 4%">
+        <nav class="navbar navbar-static-top" role="navigation">
             <!-- Sidebar toggle button-->
             <a href="#" class="sidebar-toggle" data-toggle="offcanvas"
                role="button"> <span class="sr-only">Toggle navigation</span>
             </a>
-            <div class="row pull-right" >
-                <div class="col-xs-6">
-                    <button class="storage-btn disabled btn btn-default">
-                        用户名:<span>管理员</span>
-                    </button>
-                </div>
-                <div class="col-xs-1">
-                    <!--  <button class="btn btn-default">
-                    <span class="glyphicon glyphicon-envelope"></span>
-                </button> -->
-                </div>
-                <div class="col-xs-4">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-default dropdown-toggle"
-                                data-toggle="dropdown">
-                            admin<span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="login">退出登录</a></li>
-                        </ul>
-                    </div>
-                </div>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <li class="dropdown messages-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                          商城
+                        </a>
+
+                    </li>
+                    <!-- Notifications: style can be found in dropdown.less -->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            旅行
+                            <!--<i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">10</span>-->
+                        </a>
+
+                    </li>
+                    <li class="dropdown notifications-menu">
+                        &nbsp;&nbsp;&nbsp;
+
+                    </li>
+                    <!-- Tasks: style can be found in dropdown.less -->
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-danger">9</span>
+                        </a>
+
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" >
+
+                            <span class="hidden-xs">用户名</span>
+                        </a>
+
+                    </li>
+                    <!-- Control Sidebar Toggle Button -->
+
+                </ul>
             </div>
 
         </nav>
@@ -201,9 +220,9 @@
                                 </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a target="right" href="">系统推送</a></li>
-                            <li><a target="right" href="">站内消息</a></li>
-                            <li><a target="right" href="">手机短信</a></li>
+                            <li><a target="right" href="systemmsg.html">系统推送</a></li>
+                            <li><a target="right" href="instationmsg.html">站内消息</a></li>
+                            <li><a target="right" href="phonemsg.html">手机短信</a></li>
 
                         </ul>
                     </li>
@@ -230,6 +249,10 @@
 
     <div id="text" class="content-htm content-wrapper"
          style="height: 100%">
+        <div class='visible-xs seat-xs hidden-sm'></div>
+        <div class=' visible-sm seat-sm hidden-md'></div>
+        <div class='visible-md seat-md hidden-lg'></div>
+        <div class='visible-lg '><br></div>
         <iframe scrolling='auto' id="right" name="right" width="100%"
                 style="border: none;" src="goodsManage.html"></iframe>
     </div>

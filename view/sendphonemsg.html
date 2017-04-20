@@ -10,40 +10,52 @@
     <title>Title</title>
 
 </head>
-<body class="chosegoodcheap">
+<body class="sendphonemsg">
     <div class="htm-bread">
         <ol class="breadcrumb">
-            <li>营销</li>
-            <li>商品优惠</li>
-            <li class="active">选择优惠商品</li>
+            <li>消息</li>
+            <li>手机短信</li>
+            <li class="active">发送短信</li>
         </ol>
     </div>
 
     <form action="">
         <div class="htm-msg">
             <div class="msg-title row">
-                <div class="pull-left">选择优惠商品</div>
+                <div class="pull-left">短信内容</div>
             </div>
             <div class="form-group row">
                 <div class="col-xs-3 text-center">
-                    <label for="">优惠商品SKU编码</label>
+                    <label for="">短信标题</label>
                 </div>
-                <div class="col-xs-7 text-left">
+                <div class="col-xs-4 text-left">
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">会员类型</label>
+                </div>
+                <div class="col-xs-4 text-left">
+                    <input type="radio" >全部
+                    <input type="radio" >联盟会员
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3 text-center">
+                    <label for="">短信内容</label>
+                </div>
+                <div class="col-xs-4 text-left">
                     <textarea name="" id="" cols="30" rows="15" class="form-control"></textarea>
                 </div>
             </div>
         </div>
-
-        <div class="finish row">
+        <div class="finish-btn row">
             <div class="col-xs-4 col-sm-5 col-md-5 col-lg-5"></div>
             <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-
-
-                    <a href="chosegoodcheapNext.html" class="btn btn-primary btn-block">下一步</a>
-
+                <button class="btn btn-primary btn-block">完成</button>
             </div>
         </div>
-
     </form>
 
 <script src="../component/jquery/dist/jquery.min.js"></script>
